@@ -1,0 +1,39 @@
+:root {
+  /* Paleta de Cores */
+  --color-primary: #0a0a23; /* Um azul quase preto para o fundo */
+  --color-secondary: #f5f6f7; /* Branco para texto principal */
+  --color-accent: #4d90fe; /* Azul vibrante para acentos e links */
+  --color-glass-bg: rgba(255, 255, 255, 0.1); /* Fundo do efeito glassmorphism */
+  --color-glass-border: rgba(255, 255, 255, 0.2);
+  --color-success: #00f260;
+  --color-error: #ff4d4d;
+
+  /* Tipografia */
+  --font-primary: 'Poppins', sans-serif; /* Fonte moderna e limpa */
+  --font-secondary: 'Roboto Mono', monospace; /* Para detalhes técnicos ou código */
+
+  --font-size-base: 16px;
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-xxl: 2.5rem;   /* 40px */
+  --font-size-hero: 3.5rem;  /* 56px */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Espaçamentos */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem;  /* 8px */
+  --spacing-md: 1rem;    /* 16px */
+  --spacing-lg: 2rem;    /* 32px */
+  --spacing-xl: 4rem;    /* 64px */
+  --spacing-xxl: 8rem;   /* 128px */
+
+  /* Outros */
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+  --box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}

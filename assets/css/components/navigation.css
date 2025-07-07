@@ -1,0 +1,71 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    width: 100%;
+}
+
+.main-nav .logo {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+
+.main-nav .nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.main-nav .nav-links a {
+    text-decoration: none;
+    font-weight: var(--font-weight-regular);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.main-nav .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width var(--transition-speed) ease-in-out;
+}
+
+.main-nav .nav-links a:hover::after,
+.main-nav .nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none; /* Escondido em telas maiores */
+    z-index: 1001;
+}
+
+/* Estilos para o menu mobile */
+@media (max-width: 768px) {
+    .main-nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background: var(--color-primary);
+        padding-top: var(--spacing-xxl);
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .main-nav .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block; /* Visível em telas menores */
+        cursor: pointer;
+    }
+}

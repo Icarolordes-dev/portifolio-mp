@@ -1,0 +1,22 @@
+.main-footer {
+    padding: var(--spacing-lg) var(--spacing-lg);
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-glass-border);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-links a {
+    font-size: var(--font-size-xl);
+}
+
+.footer-copy {
+    font-size: var(--font-size-sm);
+    opacity: 0.7;
+}

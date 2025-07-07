@@ -1,0 +1,23 @@
+/* Estilos para animação de scroll */
+.hero-content, .diferenciais, .projetos-destaque, .sobre-mim, .habilidades, .certificacoes, .servicos, .contato-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero-content.is-visible,
+.diferenciais.is-visible,
+.projetos-destaque.is-visible,
+.sobre-mim.is-visible,
+.habilidades.is-visible,
+.certificacoes.is-visible,
+.servicos.is-visible,
+.contato-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para o efeito 3D do card */
+.projeto-card {
+    transition: transform 0.2s ease-out; /* Transição mais suave para o retorno */
+}

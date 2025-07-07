@@ -1,0 +1,21 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.main-header.scrolled {
+    background-color: var(--color-glass-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-glass-border);
+    box-shadow: var(--box-shadow);
+}
+
+/* Adiciona um espaçamento no topo do conteúdo principal para não ficar atrás do header fixo */
+body {
+    padding-top: 80px; /* Ajuste este valor conforme a altura do seu header */
+}

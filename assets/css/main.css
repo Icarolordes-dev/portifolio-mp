@@ -1,0 +1,23 @@
+/* Ponto de entrada principal para os estilos CSS. */
+/* A ordem de importação é crucial para a cascata de estilos. */
+
+/* 1. Base - Resets, variáveis, tipografia global */
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/typography.css');
+
+/* 2. Layout - Estrutura principal como Header, Footer, Grid */
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+@import url('./layout/grid.css');
+@import url('./layout/sobre.css');
+@import url('./components/hero.css');
+
+/* 3. Components - Peças reutilizáveis da UI como botões, cards, formulários */
+@import url('./components/navigation.css');
+@import url('./components/cards.css');
+@import url('./components/filters.css');
+@import url('./components/forms.css');
+/* @import url('./components/buttons.css'); */
+@import url('./components/modal.css');
+@import url('./components/animations.css');

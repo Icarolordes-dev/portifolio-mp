@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Portfólio de Ícaro Lordes</title>
+    <meta name="description" content="Explore os projetos de desenvolvimento web e campanhas de tráfego pago de Ícaro Lordes.">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <!-- O menu de navegação será inserido aqui -->
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="projetos-galeria">
+            <div class="filtros">
+                <button class="filtro-btn active" data-category="todos">Todos</button>
+                <button class="filtro-btn" data-category="web">Desenvolvimento Web</button>
+                <button class="filtro-btn" data-category="trafego">Gestão de Tráfego</button>
+            </div>
+            <div class="grid-projetos">
+                <article class="card projeto-card" data-category="web">
+                    <img src="assets/images/project-1.png" alt="Preview do Projeto 1">
+                    <div class="card-content">
+                        <h3>Website Institucional Moderno</h3>
+                        <p>Desenvolvimento de um site responsivo com foco em UX/UI para uma startup de tecnologia.</p>
+                        <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+                <article class="card projeto-card" data-category="trafego">
+                    <img src="assets/images/project-4.png" alt="Preview do Projeto 4">
+                    <div class="card-content">
+                        <h3>Campanha de Lançamento</h3>
+                        <p>Gestão de campanha no Meta Ads para o lançamento de um infoproduto, resultando em um ROAS de 5x.</p>
+                        <div class="tags"><span>Meta Ads</span><span>Copywriting</span></div>
+                    </div>
+                </article>
+                <article class="card projeto-card" data-category="web">
+                    <img src="assets/images/project-2.png" alt="Preview do Projeto 2">
+                    <div class="card-content">
+                        <h3>Landing Page de Alta Conversão</h3>
+                        <p>Criação de uma landing page otimizada para conversão, com testes A/B e integração com CRM.</p>
+                        <div class="tags"><span>Vue.js</span><span>Firebase</span><span>Google Optimize</span></div>
+                    </div>
+                </article>
+                <article class="card projeto-card" data-category="web">
+                    <img src="assets/images/project-3.png" alt="Preview do Projeto 3">
+                    <div class="card-content">
+                        <h3>E-commerce de Nicho</h3>
+                        <p>Plataforma de e-commerce completa com integração de pagamento e sistema de gestão de produtos.</p>
+                        <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-container" id="project-modal" aria-hidden="true">
+        <!-- O conteúdo do modal será preenchido dinamicamente via JS -->
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/icarolordes/" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+            <a href="https://github.com/Icarolordes-dev" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="https://www.credly.com/users/icaro-lordes" target="_blank" rel="noopener" aria-label="Credly">CR</a>
+        </div>
+        <p class="footer-copy">&copy; 2024 Ícaro Lordes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
